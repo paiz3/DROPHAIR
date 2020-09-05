@@ -5,17 +5,18 @@ body {
 }
  
 #login_frame {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
     padding: 13px;
  
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -200px;
-    margin-top: -150px;
+    margin-left: -300px;
+    margin-top: -225px;
+    padding: 100;
  
-    background-color: rgba(0,0,0,0.3);
+    background-color: white;
  
     text-align: center;
 }
@@ -26,10 +27,11 @@ form p > * {
 }
  
 #image_logo {
-    margin-top: 20px;
-    margin-left: 150px;
     width: 100px;
     height: 100px;
+
+    margin-top: 50px;
+    margin-left: 250px;
 }
 
 img {
@@ -41,20 +43,24 @@ img {
     font-size: 20px;
     font-family: 宋体;
  
-    width: 65px;
-    height: 30px;
-    line-height: 30px;
+    width: 100px;
+    height: 42px;
+    line-height: 40px;
     text-align: center;
  
     color: white;
-    background-color: black;
+    background-color: gray;
+    border: 0;
 
 }
  
 .text_field {
-    width: 278px;
-    height: 28px;
+    font-size: 20px;
 
+    width: 300px;
+    height: 40px;
+
+    background-color: lightgray;
     border: 0;
 }
  
@@ -62,20 +68,35 @@ img {
     font-size: 20px;
     font-family: 宋体;
  
-    width: 120px;
-    height: 30px;
-    line-height: 20px;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
  
     color: white;
-    background-color: black;
+    background-color: #1c8adb;
 
-    float: left;
+    float: center;
 }
- 
+
+#seperation_line {
+    width: 400px;
+    height: 1px;
+    margin-top: 20px;
+
+    color: black;
+    fill: black;
+}
+
+#others {
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+}
+
 #forget_pwd {
     font-size: 20px;
-    color: white;
+    color: black;
     text-decoration: none;
     position: relative;
     float: right;
@@ -83,10 +104,20 @@ img {
 }
  
 #forget_pwd:hover {
-    color: blue;
+    color: #1c8adb;
     text-decoration: underline;
 }
  
-#login_control {
-    padding: 0 28px;
+#sign_up {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    float: left;
 }
+
+#sign_up:hover {
+    color: #1c8adb;
+    text-decoration: underline;
+}
+
