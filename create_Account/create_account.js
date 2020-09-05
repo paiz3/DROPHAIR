@@ -28,6 +28,6 @@ function validate_account() {
     } 
     else
     {
-        window.location.href="personal_info.html";
+        window.location.href="../course page/index.html";
     }
 }
