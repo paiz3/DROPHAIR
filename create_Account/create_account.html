@@ -29,18 +29,18 @@
 
         <div class="sign-up-form">
             <h1>用户注册</h1>
-            <form method = "GET" onsubmit="validate_account()">
-                <input type="text" id="email" class="input-box" placeholder="请输入邮箱">
-                <input type="text" id="name" class="input-box" placeholder="请输入您的姓名">
-                <input type="text" id="username" class="input-box" placeholder="请输入用户名">
-                <input type="text" id="school" class="input-box" placeholder="请输入您的学校">
-                <input type="password" id="password" class="input-box" placeholder="请输入登陆密码">
-                <input type="password" id="confirm_password" class="input-box" placeholder="请确认登陆密码">
+            <form action="connect.php" method = "POST" onsubmit="validate_account()">
+                <input type="text" id="email" class="input-box" placeholder="请输入邮箱" name="email">
+                <input type="text" id="name" class="input-box" placeholder="请输入您的姓名" name="name">
+                <input type="text" id="username" class="input-box" placeholder="请输入用户名" name="username">
+                <input type="text" id="school" class="input-box" placeholder="请输入您的学校" name="school">
+                <input type="password" id="password" class="input-box" placeholder="请输入登陆密码" name="password">
+                <input type="password" id="confirm_password" class="input-box" placeholder="请确认登陆密码" name="confirm_password">
 
                 <h3>请选择您的专业</h3>
 
                 <div class="select-box">
-                    <p><select name="catagory" required class="form-control">
+                    <p><select name="category" required class="form-control">
                         <option value="">无 (None)</option>
                         <option value="BME">生物医学工程 (Biomedical Engineering)</option>
                         <option value="CHBE">化学工程 (Chemical Engineering)</option>
@@ -61,28 +61,29 @@
                 <p><input type="checkbox" id="login_nexttime" name="login_nexttime" value="login_nexttime">
                 <label for="login_nexttime">下次自动登录</label>
 
-                <input type="checkbox" onclick="Toggle()"> 
+                <input type="checkbox" onclick="Toggle()">
                 <label for="show_password">显示密码</label>
-                <script> 
-                // Change the type of input to password or text 
-                function Toggle() { 
-                    var temp1 = document.getElementById("password"); 
-                    var temp2 = document.getElementById("confirm_password"); 
-                    if (temp1.type === "password") { 
-                    temp1.type = "text"; 
+                <script>
+                // Change the type of input to password or text
+                function Toggle() {
+                    var temp1 = document.getElementById("password");
+                    var temp2 = document.getElementById("confirm_password");
+                    if (temp1.type === "password") {
+                    temp1.type = "text";
                     temp2.type = "text";
-                    } 
-                    else { 
-                    temp1.type = "password"; 
+                    }
+                    else {
+                    temp1.type = "password";
                     temp2.type = "password";
-                    } 
-                } 
-                </script> 
+                    }
+                }
+                </script>
                 </p>
 
-                <input type="submit" id="signup-button" value="立即注册"/>
+                <input type="submit" id="signup-button" value="立即注册" onsubmit="validate_account()"/>
                 <hr id="seperation_line" size=1>
                 <input type="submit" id="wechat-button" value="微信注册"/>
+                <input type="submit" class="btn btn-primary">
 
                 <p>已经注册账号？
                     <div class="login-link-wrapper">
