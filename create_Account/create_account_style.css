@@ -91,8 +91,23 @@ input[type="text"]
     background: #f1f1f1;
 }
 
+input[type="password"]
+{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
 /* login next time */
 label[for="login_nexttime"]
+{
+    font-size: small;
+}
+
+label[for="show_password"]
 {
     font-size: small;
 }
@@ -109,7 +124,6 @@ input[type=button] {
 }
 
 /* sign up button modifier */
-
 input[id="signup-button"]
 {
     background-color: #1c8adb;
@@ -122,7 +136,6 @@ input[id="signup-button"]:hover
 }
 
 /* wechat login button modifier */
-
 input[id="wechat-button"]
 {
     background-color: #1aad19;

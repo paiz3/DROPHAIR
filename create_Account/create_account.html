@@ -11,7 +11,7 @@
             <div class="nav-wrapper">
                 <div class="left-side">
                     <div class="nav-link-wrapper">
-                        <a href="login.html">返回主页</a>
+                        <a href="../Login/login.html">返回主页</a>
                     </div>
     
                     <div class="nav-link-wrapper">
@@ -33,10 +33,29 @@
             <form method = "POST" action="create_account.js">
                 <input type="text" id="email" class="input-box" placeholder="请输入邮箱">
                 <input type="text" id="username" class="input-box" placeholder="请输入用户名">
-                <input type="text" id="password" class="input-box" placeholder="请输入登陆密码">
-                <input type="text" id="confirm_password" class="input-box" placeholder="请确认登陆密码">
+                <input type="password" id="password" class="input-box" placeholder="请输入登陆密码">
+                <input type="password" id="confirm_password" class="input-box" placeholder="请确认登陆密码">
                 <p><input type="checkbox" id="login_nexttime" name="login_nexttime" value="login_nexttime">
-                <label for="login_nexttime">下次自动登录</label></p>
+                <label for="login_nexttime">下次自动登录</label>
+
+                <input type="checkbox" onclick="Toggle()"> 
+                <label for="show_password">显示密码</label>
+                <script> 
+                // Change the type of input to password or text 
+                function Toggle() { 
+                    var temp1 = document.getElementById("password"); 
+                    var temp2 = document.getElementById("confirm_password"); 
+                    if (temp1.type === "password") { 
+                    temp1.type = "text"; 
+                    temp2.type = "text";
+                    } 
+                    else { 
+                    temp1.type = "password"; 
+                    temp2.type = "password";
+                    } 
+                } 
+                </script> 
+                </p>
 
                 <input type="button" id="signup-button" value="立即注册" onclick="validate_account();"/>
                 <input type="button" id="wechat-button" value="微信注册" onclick="validate_account();"/>
@@ -49,7 +68,6 @@
             </form>
 
         </div>
-        </script>
 
     </body>
 </div>
