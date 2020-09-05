@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8" />
+        <title>Create account</title>
+        <link rel="stylesheet" href="../create_Account/create_account_style.css">
+    </head>
+    <body> 
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="login.html">返回主页</a>
+                    </div>
+    
+                    <div class="nav-link-wrapper">
+                        <a href="about_us.html">关于我们</a>
+                    </div>
+                </div>
+    
+                <div class="nav-link-wrapper">
+                    <div class="personal_page">
+                        <a href="personal_page.html">个人主页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sign-up-form">
+            <h1>用户注册</h1>
+            <script type="text/javascript">
+
+            function validate(form_id, email, username, password, confirm_password)
+            {
+                var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+                var address = document.forms[form_id].elements[email].value;
+                var uname = document.getElementById("username").value;
+                var pword = document.getElementById("password").value;
+                var confirm_pword = document.getElementById("confirm_password").value;
+
+                if (reg.test(address) == false)
+                {
+                    window.alert('请填写正确的邮箱信息');
+                    document.forms[form_id].elements[email].focus();
+
+                    return false;
+                }
+                if (address.value == "" || address.value == null)
+                { 
+                    window.alert('请填写正确的邮箱信息');
+                    document.forms[form_id].elements[email].focus();
+
+                    return false;
+                }
+                if (uname.value == "" || uname.value == null)
+                {
+                    window.alert('请填写正确的姓名信息');
+                    document.forms[form_id].elements[username].focus();
+
+                    return false;
+                }
+                if (pword.value == "" || pword.value == null)
+                {
+                    window.alert('请填写密码');
+                    document.forms[form_id].elements[password].focus();
+
+                    return false;
+                }
+                if (confirm_pword.value == "" || confirm_pword.value == null) 
+                {
+                    window.alert('请再次输入密码');
+                    document.forms[form_id].elements[confirm_password].focus();
+
+                    return false;
+                }
+                return true;
+            }
+            
+            </script>
+            <form id="sign-up-form" method="get" action="personal_info.html" onsubmit="javascript:return validate('sign_up_form','email','username','password','confirm_password');">
+                <input type="email" class="input-box" placeholder="请输入邮箱">
+                <input type="username" class="input-box" placeholder="请输入用户名">
+                <input type="password" class="input-box" placeholder="请输入登陆密码">
+                <input type="confirm_password" class="input-box" placeholder="请确认登陆密码">
+                <p><input type="checkbox" id="login_nexttime" name="login_nexttime" value="login_nexttime">
+                <label for="login_nexttime">下次自动登录</label></p>
+
+                <button type="submit" class="signup-button">立即注册</button>
+                <button type="submit" class="wechat-button">微信注册</button>
+
+                <p>已经注册账号？
+                    <div class="login-link-wrapper">
+                        <a href="login.html">立即登录</a>
+                    </div>
+                </p>
+            </form>
+
+        </div>
+        </script>
+
+    </body>
+</div>
+            </div>
+        </div>
+    </body>
+</html>
