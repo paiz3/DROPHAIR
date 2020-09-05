@@ -1,13 +1,76 @@
-body {font-size:22px;
+body {
+    margin: 0;
+    padding: 0;
     background-image:url(study\ background.jpg);
     background-size: cover;
+    font-family: sans-serif;
     background-position-x:200px;}
 
-table {border-top:none;
+    /* create a template grid of 1 fraction */
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*-----Nav styles-----*/
+/* gives a space between the nav-wrapper divs */
+.nav-wrapper {
+	display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.5);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+/* gives a space between the left-side divs */
+.left-side {
+	display: flex;
+}
+
+/* modifies the stats of left-side div */
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 0.98em;
+	text-transform: uppercase;
+}
+
+/* modifies the stats of the wrapper around the link */
+/* last step gives a trasition */
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+/* changes the color of the link to grey and gives a transition */
+.nav-link-wrapper a {
+	color: #797878;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/* changes the wrapper border under the links to black when hover over */
+.nav-link-wrapper:hover {
+	border-bottom: 2px solid black;
+}
+
+/* changes the color of the links to black when hover over */
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+table {
+    display: flex;
+    padding-left: 10%;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.5);
+    border-top:none;
     border-left:none;
     border-right:none;
-    width:1000px;
-
+    width:1200px;
+    height:1000px;
 }
 th {font-weight:bold;
     font-size:100;
@@ -31,23 +94,29 @@ button {font-family: arial; color:black;}
     
 }
 #buttonpos1 {position:absolute;
-            left: 1000px;
+            left: 1200px;
             top:100px;}
 
 #buttonpos2 {position:absolute;
-            left:1000px;
+            left:1200px;
             top:200px;}
 
-#tablepos {position:absolute;
-    left: 200px;
+#tablepos {
+    position:absolute;
+    left: 500px;
     top: 275px;
-    height:400px;
+    height:600px;
     overflow:scroll;}
 
 
 #menupos {position:absolute;
           left:0%; 
           top:275px;}
+
+.menupos h1 
+{
+    font-size: large;
+}
 
 #menupos ul {list-style: none;}
 

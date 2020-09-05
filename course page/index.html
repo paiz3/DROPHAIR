@@ -9,7 +9,8 @@
 
 
     body {
-        font-size:22px;
+        margin: 0;
+        padding: 0;
         background-image:url(study\ background.jpg);
         background-size: cover;
         font-family: sans-serif;
@@ -100,47 +101,86 @@
         background-color:black;
         
     }
+.select 
+{
+    padding-left: 5%;
+}
+.tablepos h3
+{
+    color: black;
+    font-size: x-large;
+}
+
+/* select box modifier */
+.select-box select
+{
+    background: #f1f1f1;
+    color: black;
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+}
+
+.select-box:before
+{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #dcdce2;
+}
+
+.select-box:hover:before
+{
+    background: #797878;
+}
 
 
     #buttonpos1 {position:absolute;
                 left: 1000px;
                 top:100px;}
 
-    #buttonpos2 {position:absolute;
-                left:1000px;
-                top:200px;}
-
-    .tablepos {
+    #buttonpos2 
+    {
         position:absolute;
-        left: 200px;
+        left:1000px;
+        top:200px;
+    }
+
+    .tablepos 
+    {
+        position:absolute;
+        left: 300px;
         top: 230px;
-        height:300px;
+        height:800px;
         box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
         background: rgba(255,255,255,0.5);
         overflow:scroll;
     }
 
-    #menupos {position:absolute;
-              left:0%; 
-              top:250px;}
-
-    #menupos ul {list-style: none;}
-
-    #menupos ul li {background-color:none;
-                    width:150px;
-                    border:none;
-                    height:50px;
-                    line-height:50px;}
-
-    #menupos ul li:hover {background-color:none;}
-
-    #menupos ul ul {display:none;}
-
-    #menupos ul li:hover > ul {
-        display:block;
-        background-color:none;
+    .search_bar h1
+    {
+        font-size: x-large;
     }
 
+    #menupos 
+    {
+        margin-left: 0;
+        padding-left:0%; 
+        padding-top:10%;
+    }
+
+    .buttonpos1 
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .buttonpos3
+    {
+        padding-top: 20px;
+    }
 
     </style>
 
@@ -166,7 +206,7 @@
 
             <div class="nav-link-wrapper">
                 <div class="personal_page">
-                    <a href="personal_page.html">个人主页</a>
+                    <a href="../course page/index.html">个人主页</a>
                 </div>
             </div>
         </div>
@@ -191,21 +231,122 @@
     </tr>
 
 </table>
+
+<div class="select">
+<h3>请选择您感兴趣的课程</h3>
+
+<div class="select-box">
+    <p><select name="catagory" required class="form-control">
+        <option value="">无 (None)</option>
+        <option value="BME">生物医学工程 (Biomedical Engineering)</option>
+        <option value="CHBE">化学工程 (Chemical Engineering)</option>
+        <option value="CE">公共工程 (Civil Engineering)</option>
+        <option value="EECE">电子信息工程 (Electrical Engineering)</option>
+        <option value="ME">机械工程 (Mechanical Engineering)</option>
+        <option value="CS">计算机科学与技术 (Computer Science)</option>
+        <option value="CE">计算机工程 (Computer Engineering)</option>
+        <option value="MSE">材料科学与工程 (Material Engineering)</option>
+        <option value="MATH">数学与应用数学 (Mathematics/Applied Mathematics)</option>
+        <option value="PHYS">应用物理学 (Applied Physics)</option>
+        <option value="AERO">航空航天工程 (Aerospace Engineering)</option>
+        <option value="EES">环境科学 (Environmental Science)</option>
+        <option value="NUCL">核工程与核技术 (Nuclear Engineering)</option>
+    </select>
+</div>
+
+<div class="select-box">
+    <p><select name="catagory" required class="form-control">
+        <option value="">无 (None)</option>
+        <option value="BME">生物医学工程 (Biomedical Engineering)</option>
+        <option value="CHBE">化学工程 (Chemical Engineering)</option>
+        <option value="CE">公共工程 (Civil Engineering)</option>
+        <option value="EECE">电子信息工程 (Electrical Engineering)</option>
+        <option value="ME">机械工程 (Mechanical Engineering)</option>
+        <option value="CS">计算机科学与技术 (Computer Science)</option>
+        <option value="CE">计算机工程 (Computer Engineering)</option>
+        <option value="MSE">材料科学与工程 (Material Engineering)</option>
+        <option value="MATH">数学与应用数学 (Mathematics/Applied Mathematics)</option>
+        <option value="PHYS">应用物理学 (Applied Physics)</option>
+        <option value="AERO">航空航天工程 (Aerospace Engineering)</option>
+        <option value="EES">环境科学 (Environmental Science)</option>
+        <option value="NUCL">核工程与核技术 (Nuclear Engineering)</option>
+    </select>
+</div>
+
+<div class="select-box">
+    <p><select name="catagory" required class="form-control">
+        <option value="">无 (None)</option>
+        <option value="BME">生物医学工程 (Biomedical Engineering)</option>
+        <option value="CHBE">化学工程 (Chemical Engineering)</option>
+        <option value="CE">公共工程 (Civil Engineering)</option>
+        <option value="EECE">电子信息工程 (Electrical Engineering)</option>
+        <option value="ME">机械工程 (Mechanical Engineering)</option>
+        <option value="CS">计算机科学与技术 (Computer Science)</option>
+        <option value="CE">计算机工程 (Computer Engineering)</option>
+        <option value="MSE">材料科学与工程 (Material Engineering)</option>
+        <option value="MATH">数学与应用数学 (Mathematics/Applied Mathematics)</option>
+        <option value="PHYS">应用物理学 (Applied Physics)</option>
+        <option value="AERO">航空航天工程 (Aerospace Engineering)</option>
+        <option value="EES">环境科学 (Environmental Science)</option>
+        <option value="NUCL">核工程与核技术 (Nuclear Engineering)</option>
+    </select>
+</div>
+
+<div class="select-box">
+    <p><select name="catagory" required class="form-control">
+        <option value="">无 (None)</option>
+        <option value="BME">生物医学工程 (Biomedical Engineering)</option>
+        <option value="CHBE">化学工程 (Chemical Engineering)</option>
+        <option value="CE">公共工程 (Civil Engineering)</option>
+        <option value="EECE">电子信息工程 (Electrical Engineering)</option>
+        <option value="ME">机械工程 (Mechanical Engineering)</option>
+        <option value="CS">计算机科学与技术 (Computer Science)</option>
+        <option value="CE">计算机工程 (Computer Engineering)</option>
+        <option value="MSE">材料科学与工程 (Material Engineering)</option>
+        <option value="MATH">数学与应用数学 (Mathematics/Applied Mathematics)</option>
+        <option value="PHYS">应用物理学 (Applied Physics)</option>
+        <option value="AERO">航空航天工程 (Aerospace Engineering)</option>
+        <option value="EES">环境科学 (Environmental Science)</option>
+        <option value="NUCL">核工程与核技术 (Nuclear Engineering)</option>
+    </select>
+</div>
+
+<div class="select-box">
+    <p><select name="catagory" required class="form-control">
+        <option value="">无 (None)</option>
+        <option value="BME">生物医学工程 (Biomedical Engineering)</option>
+        <option value="CHBE">化学工程 (Chemical Engineering)</option>
+        <option value="CE">公共工程 (Civil Engineering)</option>
+        <option value="EECE">电子信息工程 (Electrical Engineering)</option>
+        <option value="ME">机械工程 (Mechanical Engineering)</option>
+        <option value="CS">计算机科学与技术 (Computer Science)</option>
+        <option value="CE">计算机工程 (Computer Engineering)</option>
+        <option value="MSE">材料科学与工程 (Material Engineering)</option>
+        <option value="MATH">数学与应用数学 (Mathematics/Applied Mathematics)</option>
+        <option value="PHYS">应用物理学 (Applied Physics)</option>
+        <option value="AERO">航空航天工程 (Aerospace Engineering)</option>
+        <option value="EES">环境科学 (Environmental Science)</option>
+        <option value="NUCL">核工程与核技术 (Nuclear Engineering)</option>
+    </select>
+</div>
+</div>
+
 </form>
 </div>
 
 <div id="menupos">
 <ul>
-    <li>课程搜索
+    <div class="search_bar">
+    <h1>课程搜索</h1>
         <ul>
-            <li><a href="all_class_page.html" title="display all present courses">
-                全部课程
-            </a></li>
-            <li>
-                我的课程
-            </li>
+            <div class="buttonpos1">
+                <a href="../course page/all_class_page.html" class="button">全部课程</a>
+            </div>
+            <div class="buttonpos3">
+                <a href="../course page/my_course_page.html" class="button">我的课程</a>
+            </div>
         </ul>
-    </li>
+    </div>
 </ul>
 </div>
 
