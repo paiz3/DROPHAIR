@@ -1,0 +1,152 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(../create_Account/create_account_images/image14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* create a template grid of 1 fraction */
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*-----Nav styles-----*/
+/* gives a space between the nav-wrapper divs */
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* gives a space between the left-side divs */
+.left-side {
+	display: flex;
+}
+
+/* modifies the stats of left-side div */
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 0.98em;
+	text-transform: uppercase;
+}
+
+/* modifies the stats of the wrapper around the link */
+/* last step gives a trasition */
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+/* changes the color of the link to grey and gives a transition */
+.nav-link-wrapper a {
+	color: #797878;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/* changes the wrapper border under the links to black when hover over */
+.nav-link-wrapper:hover {
+	border-bottom: 2px solid black;
+}
+
+/* changes the color of the links to black when hover over */
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+/*----- Box Styles-----*/
+/* modifies the setting of the sign-up-form */
+.sign-up-form
+{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background:  rgba(255,255,255,0.5);
+    padding: 20px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+
+/* Title */
+.sign-up-form h1
+{
+    color: #1c8adb;
+    margin-bottom: 20px;
+}
+
+/* Input boxes*/
+input[type=email], input[type=username], input[type=password], input[type=confirm_password] 
+{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* login next time */
+label[for="login_nexttime"]
+{
+    font-size: small;
+}
+
+/* button and font */
+button[type=submit] {
+    color: #ffffff;
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* sign up button modifier */
+.signup-button
+{
+    background-color: #1c8adb;
+    transition: 0.8s;
+}
+
+.signup-button:hover
+{
+    transform: scale(0.96);
+}
+
+/* wechat login button modifier */
+.wechat-button
+{
+    background-color: #1aad19;
+    transition: 0.8s;
+}
+
+.wechat-button:hover
+{
+    transform: scale(0.96);
+}
+
+/* login link modifier */
+.login-link-wrapper
+{
+    height: 20px;
+	border-bottom: 0px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.login-link-wrapper a
+{
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: large;
+}
+
+.login-link-wrapper a:hover {
+	color: black;
+}
