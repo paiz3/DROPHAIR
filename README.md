@@ -1,2 +1,2 @@
-# -Just write something here:)
-# New line here
+# Online Course Finder
+# A UNICODE SC Hackathon Project
