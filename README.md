@@ -1,4 +1,4 @@
-# Online Course Finder
+# Online Study Group Finder
 # A UNICODE SC Hackathon Project
 # 项目背景
 # 目的
