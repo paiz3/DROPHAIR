@@ -81,7 +81,7 @@ body
 }
 
 /* Input boxes*/
-input[type=name], input[type=school] 
+input[type=text]
 {
     width: 90%;
     padding: 15px;
@@ -124,7 +124,7 @@ input[type=name], input[type=school]
 }
 
 /* confirm button modifier */
-button[type=submit] {
+input[type=button] {
     color: #ffffff;
     width: 90%;
     padding: 15px;
@@ -134,13 +134,13 @@ button[type=submit] {
     cursor: pointer;
 }
 
-.confirm-button
+input[type=button]
 {
     background-color: #1c8adb;
     transition: 0.8s;
 }
 
-.confirm-button:hover
+input[type=button]:hover
 {
     transform: scale(0.96);
 }
