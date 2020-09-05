@@ -22,12 +22,12 @@ function validate_account() {
     {
         alert('请再次输入密码');
     }
-    else if(email.value == "admin@gmail.com" && username.value == "admin" && password.value == "123456" && confirm_pword.value == "123456")
+    else if(pword.value != confirm_pword.value)
     {
-        window.location.href="personal_info.html";
+        alert('两次密码不一致');
     } 
     else
     {
-        alert("请输入正确的用户名和密码")
+        window.location.href="personal_info.html";
     }
 }

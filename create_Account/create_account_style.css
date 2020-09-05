@@ -67,7 +67,7 @@ body
 /* modifies the setting of the sign-up-form */
 .sign-up-form
 {
-    width: 400px;
+    width: 600px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
     background:  rgba(255,255,255,0.5);
     padding: 20px;
@@ -115,7 +115,7 @@ label[for="show_password"]
 }
 
 /* button and font */
-input[type=button] {
+input[type=submit] {
     color: #ffffff;
     width: 90%;
     padding: 15px;
@@ -123,6 +123,37 @@ input[type=button] {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.sign-up-form h3
+{
+    color: grey;
+    font-size: medium;
+}
+
+/* select box modifier */
+.select-box select
+{
+    background: #f1f1f1;
+    color: black;
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+}
+
+.select-box:before
+{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #dcdce2;
+}
+
+.select-box:hover:before
+{
+    background: #797878;
 }
 
 /* sign up button modifier */
