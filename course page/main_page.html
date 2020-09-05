@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8"> 
+    <style type="text/css">
+
+
+    body {font-size:22px;
+        background-image:url(study\ background.jpg);
+        background-size: cover;
+        background-position-x:200px;}
+
+    table {
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        width:1000px;
+    }
+    th {font-weight:bold;
+        font-size:100;
+        width:100px;
+        border-bottom:3px solid black; 
+        padding:10px;}
+
+    tr {text-align:center;
+    }
+
+    button {font-family: arial; color:black;}
+
+    .button {
+        color:pink;
+        font-size:25px;
+        padding:8px 16px;
+        display:inline-block;
+        text-decoration:none;
+        border-radius: 4px;
+        background-color:black;
+        
+    }
+
+
+    #buttonpos1 {position:absolute;
+                left: 1000px;
+                top:100px;}
+
+    #buttonpos2 {position:absolute;
+                left:1000px;
+                top:200px;}
+
+    #tablepos {
+        position:absolute;
+        left: 200px;
+        top: 275px;
+        height:300px;
+        overflow:scroll;}
+    
+
+
+    #menupos {position:absolute;
+              left:0%; 
+              top:275px;}
+
+    #menupos ul {list-style: none;}
+
+    #menupos ul li {background-color:none;
+                    width:150px;
+                    border:none;
+                    height:50px;
+                    line-height:50px;}
+
+    #menupos ul li:hover {background-color:none;}
+
+    #menupos ul ul {display:none;}
+
+    #menupos ul li:hover > ul {
+        display:block;
+        background-color:none;
+    }
+
+
+    </style>
+
+
+
+</head>
+
+<title>
+当前页面：寻找课程
+</title>
+<body>
+<div id="tablepos"> 
+    <table cellspacing="20">
+    <tr>
+        <th>课程名称</th>
+        <th>时间</th>
+        <th>日期</th>
+        <th>发起人</th>
+        <th>交流平台</th>
+    </tr>
+    <tr>
+        <td>ECON 101</td>
+        <td>11:30 - 12:30</td>
+        <td>9.10</td>
+        <td>Jason Wang</td>
+        <td>zoom.umich.edu.123455667677idkf</td>
+    </tr>
+
+</table></div>
+
+<div id="menupos">
+<ul>
+    <li>课程搜索
+        <ul>
+            <li><a href="all_class_page.html" title="display all present courses">
+                全部课程
+            </a></li>
+            <li>
+                我的课程
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<div id="buttonpos1">
+    <a href="#" class="button">返回个人首页</a>
+</div>
+
+<div id="buttonpos2">
+    <a href="new meeting.html" class="button">新建会议</a>
+</div>
+
+
+
+
+
+</body>
+
+</html>

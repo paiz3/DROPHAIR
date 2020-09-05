@@ -1,0 +1,67 @@
+body {font-size:22px;
+    background-image:url(study\ background.jpg);
+    background-size: cover;
+    background-position-x:200px;}
+
+table {border-top:none;
+    border-left:none;
+    border-right:none;
+    width:1000px;
+
+}
+th {font-weight:bold;
+    font-size:100;
+    width:100px;
+    border-bottom:3px solid black; 
+    padding:10px;}
+
+tr {text-align:center;
+}
+
+button {font-family: arial; color:black;}
+
+.button {
+    color:pink;
+    font-size:25px;
+    padding:8px 16px;
+    display:inline-block;
+    text-decoration:none;
+    border-radius: 4px;
+    background-color:black;
+    
+}
+#buttonpos1 {position:absolute;
+            left: 1000px;
+            top:100px;}
+
+#buttonpos2 {position:absolute;
+            left:1000px;
+            top:200px;}
+
+#tablepos {position:absolute;
+    left: 200px;
+    top: 275px;
+    height:400px;
+    overflow:scroll;}
+
+
+#menupos {position:absolute;
+          left:0%; 
+          top:275px;}
+
+#menupos ul {list-style: none;}
+
+#menupos ul li {background-color:none;
+                width:150px;
+                border:none;
+                height:50px;
+                line-height:50px;}
+
+#menupos ul li:hover {background-color:none;}
+
+#menupos ul ul {display:none;}
+
+#menupos ul li:hover > ul {
+    display:block;
+    background-color:none;
+}
