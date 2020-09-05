@@ -26,7 +26,7 @@ function validate_account() {
     {
         window.location.href="personal_info.html";
     } 
-    else 
+    else
     {
         alert("请输入正确的用户名和密码")
     }
