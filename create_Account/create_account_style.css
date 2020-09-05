@@ -81,7 +81,7 @@ body
 }
 
 /* Input boxes*/
-input[type=email], input[type=username], input[type=password], input[type=confirm_password] 
+input[type="text"]
 {
     width: 90%;
     padding: 15px;
