@@ -98,7 +98,7 @@ label[for="login_nexttime"]
 }
 
 /* button and font */
-button[type=submit] {
+input[type=button] {
     color: #ffffff;
     width: 90%;
     padding: 15px;
@@ -109,25 +109,25 @@ button[type=submit] {
 }
 
 /* sign up button modifier */
-.signup-button
+input[id="signup-button"]
 {
     background-color: #1c8adb;
     transition: 0.8s;
 }
 
-.signup-button:hover
+input[id="signup-button"]:hover
 {
     transform: scale(0.96);
 }
 
 /* wechat login button modifier */
-.wechat-button
+input[id="wechat-button"]
 {
     background-color: #1aad19;
     transition: 0.8s;
 }
 
-.wechat-button:hover
+input[id="wechat-button"]:hover
 {
     transform: scale(0.96);
 }
