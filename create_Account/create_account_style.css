@@ -81,11 +81,7 @@ body
 }
 
 /* Input boxes*/
-<<<<<<< HEAD
 input[type="text"]
-=======
-input[type=email], input[type=username], input[type=password], input[type=confirm_password] 
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     width: 90%;
     padding: 15px;
@@ -102,11 +98,7 @@ label[for="login_nexttime"]
 }
 
 /* button and font */
-<<<<<<< HEAD
 input[type=button] {
-=======
-button[type=submit] {
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
     color: #ffffff;
     width: 90%;
     padding: 15px;
@@ -117,41 +109,27 @@ button[type=submit] {
 }
 
 /* sign up button modifier */
-<<<<<<< HEAD
+
 input[id="signup-button"]
-=======
-.signup-button
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     background-color: #1c8adb;
     transition: 0.8s;
 }
 
-<<<<<<< HEAD
 input[id="signup-button"]:hover
-=======
-.signup-button:hover
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     transform: scale(0.96);
 }
 
 /* wechat login button modifier */
-<<<<<<< HEAD
+
 input[id="wechat-button"]
-=======
-.wechat-button
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     background-color: #1aad19;
     transition: 0.8s;
 }
 
-<<<<<<< HEAD
 input[id="wechat-button"]:hover
-=======
-.wechat-button:hover
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     transform: scale(0.96);
 }

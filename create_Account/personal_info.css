@@ -81,11 +81,7 @@ body
 }
 
 /* Input boxes*/
-<<<<<<< HEAD
 input[type=text]
-=======
-input[type=name], input[type=school] 
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     width: 90%;
     padding: 15px;
@@ -128,11 +124,7 @@ input[type=name], input[type=school]
 }
 
 /* confirm button modifier */
-<<<<<<< HEAD
 input[type=button] {
-=======
-button[type=submit] {
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
     color: #ffffff;
     width: 90%;
     padding: 15px;
@@ -142,21 +134,14 @@ button[type=submit] {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 input[type=button]
-=======
-.confirm-button
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     background-color: #1c8adb;
     transition: 0.8s;
 }
 
-<<<<<<< HEAD
+
 input[type=button]:hover
-=======
-.confirm-button:hover
->>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 {
     transform: scale(0.96);
 }

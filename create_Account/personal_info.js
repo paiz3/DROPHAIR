@@ -12,6 +12,6 @@ function validate_info() {
     }
     else
     {
-        window.location.href="welcome.html";
+        window.location.href="../course page/index.html";
     }
 }
