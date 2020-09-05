@@ -1,22 +1,81 @@
 body {
-    background-image: url("images/login/login.jpg");;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("../create_Account/create_account_images/image14.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+/* create a template grid of 1 fraction */
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*-----Nav styles-----*/
+/* gives a space between the nav-wrapper divs */
+.nav-wrapper {
+	display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.5);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+/* gives a space between the left-side divs */
+.left-side {
+	display: flex;
+}
+
+/* modifies the stats of left-side div */
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 0.98em;
+	text-transform: uppercase;
+}
+
+/* modifies the stats of the wrapper around the link */
+/* last step gives a trasition */
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+/* changes the color of the link to grey and gives a transition */
+.nav-link-wrapper a {
+	color: #797878;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/* changes the wrapper border under the links to black when hover over */
+.nav-link-wrapper:hover {
+	border-bottom: 2px solid black;
+}
+
+/* changes the color of the links to black when hover over */
+.nav-link-wrapper a:hover {
+	color: black;
 }
  
 #login_frame {
     width: 600px;
-    height: 450px;
+    height: 700px;
     padding: 13px;
  
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -300px;
-    margin-top: -225px;
+    margin-top: -300px;
     padding: 100;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
  
-    background-color: white;
+    background-color: rgba(255,255,255,0.5);
  
     text-align: center;
 }
@@ -25,13 +84,22 @@ form p > * {
     display: inline-block;
     vertical-align: middle;
 }
+
+#login_frame h1
+{
+    color: #1c8adb;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
  
 #image_logo {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 240px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -41,7 +109,6 @@ img {
 
 .label_input {
     font-size: 20px;
-    font-family: 宋体;
  
     width: 100px;
     height: 42px;
@@ -60,7 +127,7 @@ img {
     width: 300px;
     height: 40px;
 
-    background-color: lightgray;
+    background-color: #ffffff;
     border: 0;
 }
 
@@ -68,27 +135,42 @@ img {
     width: 300px;
     height: 80px;
     margin-left: 150px;
+    margin-top: 40px;
 }
 
 #btn_login {
     font-size: 20px;
-    font-family: 宋体;
  
     width: 300px;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
     text-align: center;
  
     color: white;
     background-color: #1c8adb;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 
     float: center;
+}
+
+/* sign up button modifier */
+input[id="btn_login"]
+{
+    transition: 0.8s;
+}
+
+input[id="btn_login"]:hover
+{
+    transform: scale(0.96);
 }
 
 #seperation_line {
     width: 400px;
     height: 1px;
-    margin-top: 20px;
+    margin-top: 50px;
 
     color: black;
     fill: black;
@@ -98,6 +180,7 @@ img {
     width: 400px;
     height: 40px;
     margin-left: 100px;
+    margin-top: 20px;
 }
 
 #forget_pwd {

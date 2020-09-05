@@ -4,7 +4,7 @@ body
     padding: 0;
     font-family: sans-serif;
     background-image: url(../create_Account/create_account_images/image14.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -18,10 +18,12 @@ body
 /* gives a space between the nav-wrapper divs */
 .nav-wrapper {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.5);
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
 }
 
 /* gives a space between the left-side divs */
@@ -133,6 +135,15 @@ input[id="signup-button"]
 input[id="signup-button"]:hover
 {
     transform: scale(0.96);
+}
+
+#seperation_line {
+    width: 380px;
+    height: 1px;
+    margin-top: 0;
+
+    color: black;
+    fill: black;
 }
 
 /* wechat login button modifier */
