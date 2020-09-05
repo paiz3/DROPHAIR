@@ -1,0 +1,92 @@
+body {
+    background-image: url("images/login/login.jpg");;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ 
+#login_frame {
+    width: 400px;
+    height: 300px;
+    padding: 13px;
+ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+ 
+    background-color: rgba(0,0,0,0.3);
+ 
+    text-align: center;
+}
+ 
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+#image_logo {
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+.label_input {
+    font-size: 20px;
+    font-family: 宋体;
+ 
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+ 
+    color: white;
+    background-color: black;
+
+}
+ 
+.text_field {
+    width: 278px;
+    height: 28px;
+
+    border: 0;
+}
+ 
+#btn_login {
+    font-size: 20px;
+    font-family: 宋体;
+ 
+    width: 120px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+ 
+    color: white;
+    background-color: black;
+
+    float: left;
+}
+ 
+#forget_pwd {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+ 
+}
+ 
+#forget_pwd:hover {
+    color: blue;
+    text-decoration: underline;
+}
+ 
+#login_control {
+    padding: 0 28px;
+}
