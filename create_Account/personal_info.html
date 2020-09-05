@@ -4,7 +4,10 @@
         <meta charset="uft-8" />
         <title>Personal Info</title>
         <link rel="stylesheet" href="../create_Account/personal_info.css">
+<<<<<<< HEAD
         <script type="text/javascript" src="personal_info.js"></script>
+=======
+>>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
     </head>
     <body> 
         <div class="container">
@@ -28,6 +31,7 @@
         </div>
         <div class="sign-up-form">
             <h1>个人信息</h1>
+<<<<<<< HEAD
             <form method = "POST" action="personal_info.js">
                 <input type="text" id="name" class="input-box" placeholder="请输入您的姓名">
                 <input type="text" id="school" class="input-box" placeholder="请输入您的学校">
@@ -53,6 +57,33 @@
                 </div>
 
                 <input type="button" id="confirm-button" value="确认" onclick="validate_info();"/>
+=======
+            <form id="info_form" method="get" action="personal_info.html">
+                <input type="name" class="input-box" placeholder="请输入您的姓名">
+                <input type="school" class="input-box" placeholder="请输入您的学校">
+                <h3>请选择您的专业</h3>
+
+                <div class="select-box">
+                    <p><select>
+                        <option></option>
+                        <option>生物工程 (Biomedical Engineering)</option>
+                        <option>化学工程 (Chemical Engineering)</option>
+                        <option>公共工程 (Civil Engineering)</option>
+                        <option>电子信息工程 (Electrical Engineering)</option>
+                        <option>机械工程 (Mechanical Engineering)</option>
+                        <option>计算机科学与技术 (Computer Science)</option>
+                        <option>计算机工程 (Computer Engineering)</option>
+                        <option>材料科学与工程 (Material Engineering)</option>
+                        <option>数学与应用数学 (Mathematics/Applied Mathematics)</option>
+                        <option>应用物理学 (Applied Physics)</option>
+                        <option>航空航天工程 (Aerospace Engineering)</option>
+                        <option>环境工程 (Environmental Engineering)</option>
+                        <option>核工程与核技术 (Nuclear Engineering)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="confirm-button">确认</button>
+>>>>>>> c4b25f05cf05177b2ed5904833c00fa6db3331a4
 
             </form>
         </div>
