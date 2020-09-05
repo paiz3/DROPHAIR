@@ -63,7 +63,13 @@ img {
     background-color: lightgray;
     border: 0;
 }
- 
+
+#login_control {
+    width: 300px;
+    height: 80px;
+    margin-left: 150px;
+}
+
 #btn_login {
     font-size: 20px;
     font-family: 宋体;
