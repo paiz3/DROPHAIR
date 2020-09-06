@@ -1,4 +1,4 @@
-# Online Study Group Finder
+# SSG（Search Study Group）
 # A UNICODE SC Hackathon Project
 # 项目背景
 # 目的
