@@ -72,5 +72,10 @@ body
     background:  rgba(255,255,255,0.5);
     padding: 20px;
     margin: 5% auto 0;
-    text-align: center;
+    text-align: left;
+}
+
+.title
+{
+	text-align: center;
 }
