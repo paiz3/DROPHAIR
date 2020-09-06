@@ -1,130 +1,130 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <style type="text/css">
-    body {background-image:url(meeting\ form\ backg.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;}
+        body {background-image:url(meeting\ form\ backg.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;}
 
-    /* create a template grid of 1 fraction */
-.container {
-	display: grid;
-	grid-template-columns: 1fr;
-}
+        /* create a template grid of 1 fraction */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
 
-/*-----Nav styles-----*/
-/* gives a space between the nav-wrapper divs */
-.nav-wrapper {
-	display: flex;
-    justify-content: space-between;
-    background: rgba(255,255,255,0.5);
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-}
+        /*-----Nav styles-----*/
+        /* gives a space between the nav-wrapper divs */
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.5);
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
 
-/* gives a space between the left-side divs */
-.left-side {
-	display: flex;
-}
+        /* gives a space between the left-side divs */
+        .left-side {
+            display: flex;
+        }
 
-/* modifies the stats of left-side div */
-.nav-wrapper > .left-side > div {
-	margin-right: 20px;
-	font-size: 0.98em;
-	text-transform: uppercase;
-}
+        /* modifies the stats of left-side div */
+        .nav-wrapper > .left-side > div {
+            margin-right: 20px;
+            font-size: 0.98em;
+            text-transform: uppercase;
+        }
 
-/* modifies the stats of the wrapper around the link */
-/* last step gives a trasition */
-.nav-link-wrapper {
-	height: 22px;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.5s;
-}
+        /* modifies the stats of the wrapper around the link */
+        /* last step gives a trasition */
+        .nav-link-wrapper {
+            height: 22px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.5s;
+        }
 
-/* changes the color of the link to grey and gives a transition */
-.nav-link-wrapper a {
-	color: #797878;
-	text-decoration: none;
-	transition: color 0.5s;
-}
+        /* changes the color of the link to grey and gives a transition */
+        .nav-link-wrapper a {
+            color: #797878;
+            text-decoration: none;
+            transition: color 0.5s;
+        }
 
-/* changes the wrapper border under the links to black when hover over */
-.nav-link-wrapper:hover {
-	border-bottom: 2px solid black;
-}
+        /* changes the wrapper border under the links to black when hover over */
+        .nav-link-wrapper:hover {
+            border-bottom: 2px solid black;
+        }
 
-/* changes the color of the links to black when hover over */
-.nav-link-wrapper a:hover {
-	color: black;
-}
+        /* changes the color of the links to black when hover over */
+        .nav-link-wrapper a:hover {
+            color: black;
+        }
 
-    form {font-size: 25px;
-    font-weight:bold;
-    text-decoration-style: dashed;
-    }
+        form {font-size: 25px;
+            font-weight:bold;
+            text-decoration-style: dashed;
+        }
 
-    p {font-size: 40px;
-        color:brown;
-        width:800px;
-    }
+        p {font-size: 40px;
+            color:brown;
+            width:800px;
+        }
 
-    #messagepos {
-        position:absolute;
-        top:100px;
-        left:650px
-    }
+        #messagepos {
+            position:absolute;
+            top:100px;
+            left:650px
+        }
 
 
 
-    #namepos {
-        position:absolute;
-        top:300px;
-        left:700px;
-    }
+        #namepos {
+            position:absolute;
+            top:300px;
+            left:700px;
+        }
 
-    #coursepos {
-        position:absolute;
-        top:480px;
-        left:600px;
-    }
+        #coursepos {
+            position:absolute;
+            top:480px;
+            left:600px;
+        }
 
-    #meetingpos {
-        position:absolute;
-        top: 650px;
-        left:700px;
-    }
-    #timepos {
-        position:absolute;
-        top: 380px;
-        left:620px;
-    }
+        #meetingpos {
+            position:absolute;
+            top: 650px;
+            left:700px;
+        }
+        #timepos {
+            position:absolute;
+            top: 380px;
+            left:620px;
+        }
 
-    #daypos {
-        position:absolute;
-        top: 570px;
-        left:650px;
-    }
+        #daypos {
+            position:absolute;
+            top: 570px;
+            left:650px;
+        }
 
-    .button {
-        color:rgb(231, 235, 28);
-        font-weight:bold;
-        font-size:30px;
-        display:inline-block;
-        text-decoration:none;
-        padding:8px 16px;
-        border-radius: 8px;
-        background-color:rgba(76, 17, 212, 0.89);
-    }
+        .button {
+            color:rgb(231, 235, 28);
+            font-weight:bold;
+            font-size:30px;
+            display:inline-block;
+            text-decoration:none;
+            padding:8px 16px;
+            border-radius: 8px;
+            background-color:rgba(76, 17, 212, 0.89);
+        }
 
-    #buttonpos {
-        position:absolute;
-        left:1200px;
-        top:400px;
-    }
+        #buttonpos {
+            position:absolute;
+            left:1200px;
+            top:400px;
+        }
 
     </style>
 
@@ -134,56 +134,56 @@
 </head>
 
 <title>
-当前页面：新建会议
+    当前页面：新建会议
 </title>
 
 <body>
 
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="../Login/login.html">退出登录</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="../create_Account/about_us.html">关于我们</a>
-                </div>
+<div class="container">
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper">
+                <a href="../Login/login.html">返回主页</a>
             </div>
 
             <div class="nav-link-wrapper">
-                <div class="personal_page">
-                    <a href="../course_page/index.html">个人主页</a>
-                </div>
+                <a href="../create_Account/about_us.html">关于我们</a>
+            </div>
+        </div>
+
+        <div class="nav-link-wrapper">
+            <div class="personal_page">
+                <a href="../course_page/index.html">个人主页</a>
             </div>
         </div>
     </div>
+</div>
 
- <div id="messagepos"><p>
+<div id="messagepos"><p>
     为了让小伙伴找到你，新建一个会议室吧！
 
 </p>
 </div>
 <form action="info.php" method="post">
     <div id="namepos">
-    你的名字：<input type="text" name="username" label for="username"> 
+        你的名字：<input type="text" name="username" label for="username" name="name">
     </div>
 
     <div id="coursepos">
-    课程名称：<input type="text" name="coursename" label for="coursename" >
+        课程名称：<input type="text" name="coursename" label for="coursename" name="coursename">
     </div>
 
     <div id="timepos">
-    每周时间：<input type="text" name="time" label for="time" >
+        每周时间：<input type="text" name="time" label for="time" name="time">
     </div>
     <div id="daypos">
-    每周日期：<input type="text" name="weekdays" label for="weekdays">
+        每周日期：<input type="text" name="weekdays" label for="weekdays" name="weekdays">
     </div>
     <div id="meetingpos">
-    会议链接（例如：zoom链接）：<input type="text" name="meetinglink" label for="meetinglink">
+        会议链接（例如：zoom链接）：<input type="text" name="meetinglink" label for="meetinglink" name="link">
     </div>
     <div id="buttonpos">
-    <a href="../course_page/index.html" class="button">提交!</a>
+        <input type="submit" class="btn btn-primary">
     </div>
 
 </form>
